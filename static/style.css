@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f77f00; /* Dark orange */
+}
+
+form {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.symptom {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f77f00; /* Dark orange */
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #006400; /* Dark green */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+button:active {
+    background-color: #004c00; /* Darker green */
+}
+
+.result-box {
+    margin-top: 20px;
+    background-color: #f77f00;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}

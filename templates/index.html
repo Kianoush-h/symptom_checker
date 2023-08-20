@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Symptom Checker</h1>
+        <form method="POST">
+            <div class="symptom">
+                <label for="symptom1">Symptom 1:</label>
+                <input type="text" name="symptom1" required>
+            </div>
+            <div class="symptom">
+                <label for="symptom2">Symptom 2:</label>
+                <input type="text" name="symptom2" >
+            </div>
+            <div class="symptom">
+                <label for="symptom3">Symptom 3:</label>
+                <input type="text" name="symptom3" >
+            </div>
+            <div class="symptom">
+                <label for="symptom4">Symptom 4:</label>
+                <input type="text" name="symptom4" >
+            </div>
+            <div class="symptom">
+                <label for="symptom5">Symptom 5:</label>
+                <input type="text" name="symptom5" >
+            </div>
+            <button type="submit">Diagnose</button>
+        </form>
+        <div class="result-box">
+            {% if result %}
+            <p>You have these symptoms: {{ result }}</p>
+            {% endif %}
+            {% if response %}
+            <p>AI Response: {{ response }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
